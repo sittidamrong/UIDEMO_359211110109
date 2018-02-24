@@ -1,7 +1,11 @@
 package sample;
 
+import dbUtil.dbConnection;
+
 import java.sql.Connection;
-import java.sql.SQLDataException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class loginModel {
 
