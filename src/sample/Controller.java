@@ -20,8 +20,6 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable{
     private loginModel loginModel = new loginModel();
-
-
     @FXML
     private JFXTextField username;
 
@@ -29,7 +27,10 @@ public class Controller implements Initializable{
     private JFXPasswordField password;
 
     @FXML
-    private Label dtnlogin;
+    private Label btnlogin;
+
+    @FXML
+    private Label dbStatus;
 
     @FXML
     private Label loginStatus;
@@ -51,7 +52,7 @@ public class Controller implements Initializable{
     public void Login(ActionEvent event) {
         try {
             if (this.loginModel.isLogin(username.getText(),password.getText())){
-                Stage stage = (Stage) this.btnLogin.getScene().getWindow();
+                Stage stage = (Stage) this.btnlogin.getScene().getWindow();
                 stage.close();
                 adminDashboard();
 
@@ -82,6 +83,6 @@ public class Controller implements Initializable{
 
     }//adminDashboard
 
-}
+}//class
 
 
