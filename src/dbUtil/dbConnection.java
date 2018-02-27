@@ -1,16 +1,21 @@
 package dbUtil;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class dbConnection {
-    private static final String sqconn = "jdbc:sqlite:school sqlit";
+    private static final String SQCONN = "jdbc:sqlite:school.sqlite";
 
-    public static dbConnection getconnection(){
+    public  static Connection getConnection() throws SQLException {
         try {
-            class.forname("org.sqlite.JDBC");
-            return DriverManager.getConnection()
+            Class.forName("org.sqlite.JDBC");
+            return DriverManager.getConnection(SQCONN);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
 
+        return null;
 
     }
 
@@ -21,6 +26,4 @@ public class dbConnection {
 
 
 
-
-
-}
+}//class

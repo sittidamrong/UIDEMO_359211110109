@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
@@ -133,3 +134,21 @@
         </Pane>
     </children>
 </AnchorPane>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.adminController">
+    <children>
+        <Label layoutX="217.0" layoutY="250.0" prefHeight="35.0" prefWidth="424.0" text="Welcome to Admin Dashboard" textFill="#f50f0f">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
+>>>>>>> origin/master
