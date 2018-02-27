@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller" >
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -49,15 +49,15 @@
                   <Image url="@../image/keylog.png" />
                </image>
             </ImageView>
-            <JFXTextField focusColor="#1951f8" labelFloat="true" layoutX="384.0" layoutY="69.0" promptText="Username:" />
-            <JFXPasswordField labelFloat="true" layoutX="384.0" layoutY="119.0" promptText="Password:" />
-            <Label layoutX="482.0" layoutY="166.0" prefHeight="17.0" prefWidth="54.0" style="-fx-background-color: #00e5ff;" text="login" textAlignment="CENTER" textFill="#140101">
+            <JFXTextField fx:id="username" focusColor="#1951f8" labelFloat="true" layoutX="384.0" layoutY="69.0" promptText="Username:" />
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="384.0" layoutY="119.0" promptText="Password:" />
+            <Label fx:id="dtnlogin" layoutX="482.0" layoutY="166.0" prefHeight="17.0" prefWidth="54.0" style="-fx-background-color: #00e5ff;" text="login" textAlignment="CENTER" textFill="#140101">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <Label layoutX="372.0" layoutY="379.0" prefHeight="17.0" prefWidth="199.0" />
-            <Label layoutX="333.0" layoutY="33.0" prefHeight="20.0" prefWidth="243.0" />
+            <Label fx:id="loginStatus" layoutX="333.0" layoutY="33.0" prefHeight="20.0" prefWidth="243.0" />
          </children>
       </AnchorPane>
    </children>
